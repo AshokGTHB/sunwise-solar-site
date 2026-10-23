@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SunWise India | Free Rooftop Solar Savings Calculator</title>
+  <meta name="description" content="Estimate rooftop solar system size, monthly generation, bill savings and payback in India with SunWise India's free solar calculator.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#10251d">
+  <link rel="canonical" href="https://YOUR-DOMAIN.example/">
+  <meta property="og:title" content="SunWise India — Free Rooftop Solar Calculator">
+  <meta property="og:description" content="Estimate your rooftop solar savings in under a minute. Free, simple, India-focused.">
+  <meta property="og:type" content="website">
+  <style>
+    :root{--ink:#14251d;--muted:#617168;--green:#176b45;--lime:#d9f36a;--paper:#f6f7f1;--white:#fff;--line:#e1e7df}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55}
+    a{color:inherit}.wrap{width:min(1120px,92%);margin:auto}.nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0}.brand{font-weight:850;letter-spacing:-.04em;font-size:1.25rem}.brand span{color:var(--green)}.nav a{text-decoration:none;font-weight:650}.navlinks{display:flex;gap:22px;align-items:center;font-size:.93rem}
+    .pill{background:var(--lime);padding:11px 16px;border-radius:999px;text-decoration:none;font-weight:800}.hero{padding:64px 0 54px;background:radial-gradient(ellipse at 90% 5%,#e3f2b8 0,transparent 35%),var(--paper)}
+    .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.75rem;font-weight:850;color:var(--green)}h1{font-size:clamp(2.5rem,6vw,5.2rem);line-height:.99;letter-spacing:-.065em;max-width:800px;margin:16px 0 20px}h1 em{font-style:normal;color:var(--green)}.hero p{max-width:640px;color:var(--muted);font-size:1.1rem}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{display:inline-block;border:0;border-radius:999px;padding:14px 19px;background:var(--green);color:white;font-weight:800;text-decoration:none;cursor:pointer;font-size:.95rem}.btn.secondary{background:white;color:var(--ink);border:1px solid var(--line)}
+    .trust{display:flex;gap:24px;flex-wrap:wrap;margin-top:32px;color:var(--muted);font-size:.9rem}.trust b{color:var(--ink)}
+    .calculator{margin:0 auto 72px;background:var(--white);border:1px solid var(--line);border-radius:24px;padding:clamp(22px,4vw,42px);box-shadow:0 22px 65px #183b2510;display:grid;grid-template-columns:1fr 1fr;gap:34px}.calc-intro h2{font-size:2rem;line-height:1.08;letter-spacing:-.04em;margin:8px 0}.calc-intro p{color:var(--muted)}.field{margin:22px 0}.field label{display:flex;justify-content:space-between;gap:12px;font-weight:750;margin-bottom:9px}.field output{color:var(--green)}input[type=range]{width:100%;accent-color:var(--green)}.hint{font-size:.82rem;color:var(--muted)}.results{background:#f2f7eb;border-radius:20px;padding:24px;display:flex;flex-direction:column;justify-content:center}.result-label{font-size:.85rem;color:var(--muted)}.big{font-size:3rem;letter-spacing:-.06em;font-weight:900;line-height:1.2}.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0}.stat{background:white;padding:15px;border-radius:14px}.stat strong{display:block;font-size:1.35rem;letter-spacing:-.03em}.disclaimer{font-size:.78rem;color:var(--muted);margin-top:12px}
+    section.content{padding:48px 0}.section-head{max-width:650px;margin-bottom:24px}.section-head h2{font-size:clamp(1.8rem,4vw,3rem);letter-spacing:-.05em;line-height:1.05;margin:10px 0}.section-head p{color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:white;border:1px solid var(--line);border-radius:18px;padding:22px}.card .num{font-weight:900;color:var(--green);font-size:.85rem}.card h3{margin:10px 0 8px}.card p{margin:0;color:var(--muted);font-size:.95rem}
+    .cta{padding:34px;border-radius:24px;background:var(--ink);color:white;display:flex;justify-content:space-between;align-items:center;gap:20px}.cta p{color:#c7d5cc;max-width:570px}.cta h2{font-size:2rem;letter-spacing:-.04em;margin:0}.faq{max-width:800px}.faq details{padding:18px 0;border-bottom:1px solid var(--line)}.faq summary{font-weight:800;cursor:pointer}.faq p{color:var(--muted)}footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.88rem}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:760px){.navlinks a:not(.pill){display:none}.hero{padding-top:42px}.calculator{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.cta{align-items:flex-start;flex-direction:column}.big{font-size:2.6rem}}
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebSite","name":"SunWise India","description":"India-focused rooftop solar savings calculator and educational resources","inLanguage":"en-IN"}
+  </script>
+</head>
+<body>
+<header class="wrap nav">
+  <a class="brand" href="#" aria-label="SunWise India home" style="text-decoration:none">☀ <span>SunWise</span> India</a>
+  <nav class="navlinks" aria-label="Main navigation"><a href="#calculator">Calculator</a><a href="#guides">Solar basics</a><a class="pill" href="#contact">Get an estimate ↗</a></nav>
+</header>
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">India's simple solar starting point</div>
+      <h1>Your roof could be<br>working <em>for you.</em></h1>
+      <p>Estimate rooftop solar size, monthly generation, potential bill savings and payback — in plain language, without a sales call.</p>
+      <div class="hero-actions"><a class="btn" href="#calculator">Calculate my savings →</a><a class="btn secondary" href="#guides">Learn how solar works</a></div>
+      <div class="trust"><span>✓ <b>Free calculator</b></span><span>✓ <b>India-focused estimates</b></span><span>✓ <b>No signup needed</b></span></div>
+    </div>
+  </section>
+  <section class="wrap" id="calculator" aria-labelledby="calc-title">
+    <div class="calculator">
+      <div class="calc-intro">
+        <div class="eyebrow">01 / Quick estimate</div><h2 id="calc-title">What could solar save you?</h2>
+        <p>Move the sliders to get a rough first estimate. Your actual result depends on location, roof shade, tariff, system design and applicable rules.</p>
+        <div class="field"><label for="bill">Monthly electricity bill <output id="billOut">₹3,000</output></label><input id="bill" type="range" min="500" max="20000" step="500" value="3000"><div class="hint">Your typical bill before installing solar.</div></div>
+        <div class="field"><label for="sun">Peak-sun equivalent per day <output id="sunOut">5 hours</output></label><input id="sun" type="range" min="3" max="6" step=".5" value="5"><div class="hint">Use 4–5 hours as a rough starting assumption; local conditions vary.</div></div>
+        <div class="field"><label for="tariff">Electricity rate <output id="tariffOut">₹7/kWh</output></label><input id="tariff" type="range" min="3" max="12" step=".5" value="7"><div class="hint">Adjust to approximate your effective per-unit rate.</div></div>
+      </div>
+      <div class="results" aria-live="polite">
+        <div class="result-label">Estimated system size</div><div class="big" id="size">1.9 kW</div>
+        <div class="stats"><div class="stat"><span class="result-label">Monthly generation</span><strong id="generation">285 kWh</strong></div><div class="stat"><span class="result-label">Potential monthly value</span><strong id="savings">₹1,995</strong></div><div class="stat"><span class="result-label">Illustrative system cost</span><strong id="cost">₹1.0 lakh</strong></div><div class="stat"><span class="result-label">Simple payback</span><strong id="payback">4.2 years</strong></div></div>
+        <p class="disclaimer">Planning estimate only, not a quotation or guarantee. Uses 75% bill-offset target, 4.5 kWh/day per kW adjusted by sun-hours, and an illustrative ₹55,000/kW installed cost. Actual savings can be lower due to fixed charges, export rules, shade and consumption timing. Verify current subsidy eligibility and prices before making a decision.</p>
+      </div>
+    </div>
+  </section>
+  <section class="content" id="guides"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">02 / Solar made simple</div><h2>Start with the right questions.</h2><p>Helpful, practical information builds trust — and gives people a reason to return and share your website.</p></div>
+    <div class="cards">
+      <article class="card"><div class="num">GUIDE 01</div><h3>How many kW do I need?</h3><p>Learn how to estimate system size from electricity use, available roof area and daytime consumption.</p></article>
+      <article class="card"><div class="num">GUIDE 02</div><h3>On-grid vs hybrid solar</h3><p>Understand the trade-offs between grid-connected systems, batteries, backup power and costs.</p></article>
+      <article class="card"><div class="num">GUIDE 03</div><h3>Questions to ask an installer</h3><p>Compare warranties, inverter specifications, mounting quality, safety protections and after-sales support.</p></article>
+    </div>
+  </div></section>
+  <section class="content"><div class="wrap"><div class="cta" id="contact"><div><h2>Want a more accurate estimate?</h2><p>Use this starter tool to understand the basics, then compare at least three local installers and request a site survey before spending money.</p></div><a class="pill" href="mailto:hello@YOUR-DOMAIN.example?subject=Solar%20estimate%20enquiry">Request an estimate ↗</a></div></div></section>
+  <section class="content"><div class="wrap faq"><div class="section-head"><div class="eyebrow">03 / FAQs</div><h2>Before you install solar</h2></div>
+    <details><summary>Is this calculator's result guaranteed?</summary><p>No. It is a simplified educational estimate. A proper proposal needs your electricity bills, site location, roof survey, shading analysis, sanctioned load and utility rules.</p></details>
+    <details><summary>Does every rooftop qualify for a subsidy?</summary><p>No. Eligibility and application rules depend on the current scheme, consumer category, system type and approved processes. Check official government sources before assuming a subsidy.</p></details>
+    <details><summary>Can I rank this website first on Google immediately?</summary><p>No one can guarantee that. Publish genuinely useful, accurate pages, make the site fast and mobile-friendly, set up Google Search Console, and earn relevant links and local trust over time.</p></details>
+  </div></section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> SunWise India · Educational estimates, not engineering advice.</span><span>Replace placeholder domain and email before publishing.</span></div></footer>
+<script>
+  const bill=document.querySelector('#bill'), sun=document.querySelector('#sun'), tariff=document.querySelector('#tariff');
+  const inr=n=>new Intl.NumberFormat('en-IN',{style:'currency',currency:'INR',maximumFractionDigits:0}).format(n);
+  function update(){
+    const b=+bill.value,h=+sun.value,t=+tariff.value;
+    document.querySelector('#billOut').textContent=inr(b);
+    document.querySelector('#sunOut').textContent=h+' hours';
+    document.querySelector('#tariffOut').textContent='₹'+t+'/kWh';
+    const monthlyUnits=b/t, targetUnits=monthlyUnits*.75;
+    const monthlyPerKw=30*4.5*(h/5)*.8;
+    const kw=Math.max(.5,targetUnits/monthlyPerKw);
+    const generation=kw*monthlyPerKw, savings=Math.min(b,generation*t), cost=kw*55000, years=savings>0?cost/(savings*12):0;
+    document.querySelector('#size').textContent=kw.toFixed(1)+' kW';
+    document.querySelector('#generation').textContent=Math.round(generation)+' kWh';
+    document.querySelector('#savings').textContent=inr(savings);
+    document.querySelector('#cost').textContent=cost>=100000?'₹'+(cost/100000).toFixed(1)+' lakh':inr(cost);
+    document.querySelector('#payback').textContent=years.toFixed(1)+' years';
+  }
+  [bill,sun,tariff].forEach(el=>el.addEventListener('input',update));
+  document.querySelector('#year').textContent=new Date().getFullYear(); update();
+</script>
+</body>
+</html>
