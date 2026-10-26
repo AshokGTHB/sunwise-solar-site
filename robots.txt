@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ashokgthb.github.io/sunwise-solar-site/sitemap.xml
+      
